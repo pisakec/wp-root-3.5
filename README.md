@@ -1,6 +1,6 @@
-# Wordpress Blank Theme
+# Wordpress Responsive Blank Theme
 Minimal theme... This theme is still under development by Cho
-This is a basic blank wordpress theme implementing wordpress best practice with slider ready and responsive menu as well as font icon with fontello.<br>
+This is a basic blank wordpress theme implementing <b>wordpress best practice</b> with slider ready and responsive menu as well as font icon with fontello.<br>
 <br>
 Create by http://pisake.com<br>
 <br>
