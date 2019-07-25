@@ -5,8 +5,8 @@ get_header();
 
 <main id="category">
 	<section class="content ">
-		<div class="wrapper has-sidebar">
-			<div class="badge-01">
+		<div class="wrapper row-wrap">
+			<div class="has-sidebar">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="featured-image">
@@ -23,7 +23,7 @@ get_header();
 					<a href="<?php the_permalink() ?>" rel="bookmark" class="read-more">Read More</a>
 				</article>
 				<?php endwhile; endif; ?>
-				<?php wp_pagenavi(); ?>
+				<?php //wp_pagenavi(); ?>
 			</div>
 			<?php get_sidebar(); ?>
 		</div>

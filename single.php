@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<h1>Single</h1>
+<!--<h1>Single</h1>-->
 <main id="single">
 	<section class="content ">
-		<div class="wrapper">
-			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="wrapper row-wrap">
+			<div class="has-sidebar">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<a href="<?php the_permalink()?>">
@@ -19,7 +19,7 @@
 				<?php endwhile; endif; ?>
 			</div>
 
-			<?php //get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 		</div>
 	</section>
 </main>

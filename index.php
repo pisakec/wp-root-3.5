@@ -2,7 +2,7 @@
 
 get_header();
 ?>
-<h1>index</h1>
+<!--<h1>index</h1>-->
 <main id="index">
 	<section class="content">
 		<div class="wrapper row-wrap">

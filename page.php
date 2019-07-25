@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<h1>Page</h1>
+<!--<h1>Page</h1>-->
 <main id="page">
 	<section class="content ">
-		<div class="wrapper">
+		<div class="wrapper row-wrap">
 			<div class="has-sidebar">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
