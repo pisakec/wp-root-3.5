@@ -29,6 +29,7 @@
                     <div id="site-description">
                         <?php bloginfo( 'description' ); ?>
                     </div>
+		    <?php $defaults = array( 'container' => '', 'menu' => 'main-menu', 'menu_class' => 'menu-mobile menu' ); wp_nav_menu( $defaults ); ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container_id' => 'main-nav', 'container' => false, 'menu_id' => 'myMenu', 'menu_class' => 'menu-mobile menu' ) ); ?>
                 </div>
             </div>
