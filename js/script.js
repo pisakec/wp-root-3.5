@@ -36,8 +36,9 @@ jQuery(document).ready(function ($) {
 		vertical: !0,
 		autoplaySpeed: 1000,
 		infinite: !0,
-		prevArrow: null,
-		nextArrow: null,
+		pauseOnHover: true,
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		nextArrow:  '<button type="button" class="slick-next"></button>',
 		speed: 1000,
 		adaptiveHeight: !0,
 		responsive: [{
