@@ -13,6 +13,7 @@ get_header();
 <main class="index">
 	<section class="content">
 		<div class="wrapper">
+			<h1><strong>"<?php echo get_search_query(); ?>"</strong> <?php $allsearch = new WP_Query("s=$s&showposts=0"); echo $allsearch ->found_posts.' results found.'; ?></h1>
 			<?php
 			global $query_string;
 			$query_args = explode( "&", $query_string );
