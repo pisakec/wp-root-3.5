@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!--<h1>Single</h1>-->
 <main id="single">
-	<section class="content ">
+	<section class="content" id="post-<?php the_ID(); ?>" >
 		<div class="wrapper row-wrap">
 			<div class="has-sidebar">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
