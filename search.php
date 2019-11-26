@@ -10,7 +10,7 @@ get_header();
 ?>
 
 <h1>index</h1>
-<main class="index">
+<main id="search">
 	<section class="content">
 		<div class="wrapper">
 			<h1><strong>"<?php echo get_search_query(); ?>"</strong> <?php $allsearch = new WP_Query("s=$s&showposts=0"); echo $allsearch ->found_posts.' results found.'; ?></h1>
@@ -31,13 +31,19 @@ get_header();
 
 
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-			<article>
-				<a href="<?php the_permalink(); ?>">
+			<article class="column-wrap">
+				<?php global $post; $categories = get_the_category($post->ID); $cat_link = get_category_link($categories[0]->cat_ID); echo '<a href="'.$cat_link.'"  class="cat-name">'.$categories[0]->cat_name.'</a>' ?>
+				
 					<h2>
-						<?php the_title(); ?>
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h2>
-					<?php if(get_option( 'thumbnail_size_w')> 100 && get_option('thumbnail_crop') == 1) { the_post_thumbnail('full'); }else{ the_post_thumbnail(array(100,100)); } ?>
-				</a>
+					<div class="featured-image">
+						<a href="<?php the_permalink() ?>">
+							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+							<img data-src="<?php echo $thumb['0'];?>" alt="<?php the_title(); ?>" aria-label="<?php the_title(); ?>" src="<?php echo get_template_directory_uri(); ?>/img/blank.gif"  class="lazy">
+						</a>
+					</div>
+					<p> <?php if(!empty($post->post_excerpt)) { the_excerpt(); } else { echo wp_trim_words( get_the_content(), 20, '' ); } ?> </p>				
 			</article>
 			<?php endwhile; ?>
 					<!-- end of the loop -->

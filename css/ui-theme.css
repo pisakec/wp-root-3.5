@@ -408,11 +408,13 @@ search
 }
 #search article{
     display: flex;
-    flex-flow: row wrap;
+/*    flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-between;*/
     margin: 1em 0;
     color: var(--the-green);
+	margin-bottom:1em;
+	border:1px solid red;
 }
 #search h2 span{
     color: rgba(236, 206, 236, 0.94);
@@ -497,7 +499,9 @@ category
 ========================================================================== */
 
 #category {}
-
+#category article{
+	margin-bottom:1em;
+}
 
 /* ==========================================================================
 single
@@ -506,7 +510,9 @@ single
 #single {
    
 }
-
+.entry img{
+	max-width:100%;
+}
 
 
 /* ==========================================================================
