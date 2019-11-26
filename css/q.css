@@ -19,6 +19,9 @@ span.logo{
     background-position: center;
     background-size: 60%;
 }
+.mm-panels>.mm-panel li{
+	text-indent:inherit;
+}
 /*.mm-wrapper_opening .mm-menu_fx-listitems-slide .mm-panel_opened .mm-listitem{
     color: rgba(255, 255, 255, 0.18);
 }
@@ -94,6 +97,13 @@ menu
 ========================================================================== */
 
 @media only screen and (max-width: 640px) {
+	.has-sidebar{
+		width:100%;
+	}
+	aside{
+		width:100%;
+		margin-bottom:1em;
+	}
 }
 
 /* ==========================================================================

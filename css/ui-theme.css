@@ -220,7 +220,9 @@ layout
     margin: 0 auto;
     text-align: center;
 }
-
+.text-align-left{
+	text-align: left;
+}
 .hide {
     display: none;
 }
@@ -386,13 +388,14 @@ letter-spacing: 1px;
 search
 ========================================================================== */
 .search-box input[type=search] {
-    width: 100%;
+width: 100%;
     padding: .5em;
     font-family: 'Montserrat',sans-serif;
     color: rgba(0,0,0,.7);
-    border: 0;
+    border: 1px solid aqua;
     background-color: rgba(255,255,255,.85);
     border-radius: 3px;
+    margin-bottom: 0.5rem;
 }
 .search-box label{
     position: absolute;
@@ -789,7 +792,7 @@ ul.menu {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     border: 0px solid red;
     position: relative;
     width: auto;
@@ -806,7 +809,7 @@ ul.menu > li > a {
     color: #000;
     font-size: 15px;
     padding: 10px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.25px;
     position: relative;
     text-decoration: none;
@@ -824,7 +827,7 @@ ul.menu > li > a:hover {
     color: #939694;
 }
 ul.menu li.current-menu-item a{
-	color:rgba(248,100,255,0.97)
+	color:rgba(248,100,255,0.97);
 }
 /*ul.menu > li:first-child a {
     color: #289835;
