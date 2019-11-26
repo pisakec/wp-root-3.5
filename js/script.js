@@ -1,6 +1,6 @@
 WebFont.load({
 	google: {
-		families: ['Libre+Franklin:300,400,500,700']
+		families: ['Calistoga','Poppins:400,500,700&display=swap']
 	}
 });
 document.addEventListener(
@@ -92,52 +92,25 @@ jQuery(document).ready(function ($) {
 
 
 
+
+
 /*
 jQuery(document).ready(function ($) {
-	var $menu = $("#mobile-nav").mmenu({
-		extensions: ["border-offset", "fx-menu-fade", "fx-listitems-slide", "pagedim-black"],
-		"iconbar": {
-			"add": true,
-			"top": [
-				"<a class='icon-home' href='#/'></a>",
-				"<a class='icon-facebook' href='#/'></a>",
-				"<a class='icon-twitter' href='#/'></a>",
-				"<a class='icon-gplus' href='#/'></a>"
-			],
-			"bottom": []
-		},
-		navbar: {
-			title: ""
-		},
-		"navbars": [{
-			"position": "top",
-			"content": ["<a href='index.php' style='display:flex'><span class='logo'></span></a>"],
-			height: 2
-
-		}],
-		"iconPanels": true,
-		"counters": true,
-		"iconPanels": true
-	});
-
-	var $icon = $("#my-icon");
-	var API = $menu.data("mmenu");
-	$icon.on("click", function () {
-		API.open();
-	});
-
-	API.bind("open:finish", function () {
-		setTimeout(function () {
-			$icon.addClass("is-active");
-		}, 100);
-	});
-	API.bind("close:finish", function () {
-		setTimeout(function () {
-			$icon.removeClass("is-active");
-		}, 100);
-	});
 
 });
+*/
+(function() {
+    new Headroom(document.querySelector("#header"), {
+        tolerance: 5,
+        offset : 205,
+/*        classes: {
+          initial: "slide",
+          pinned: "slide--reset",
+          unpinned: "slide--up"
+        }*/
+    }).init();
+
+}());
 
 jQuery(document).ready(function ($) {
 	$(window).scroll(function () {
@@ -161,34 +134,6 @@ jQuery('#back-to-top').click(function () {
 	}, 800);
 	return !1
 })
-
-jQuery(document).ready(function ($) {
-$('.menu-trigger').click(function(){
-  $(this).toggleClass('open');
-})
-	$('.mp-pusher.mp-pushed').click(function(){
-  $('.menu-trigger').removeClass('open');
-})
-});
-
 var myLazyLoad = new LazyLoad({
     elements_selector: "img.lazy"		
-});*/
-
-/*
-jQuery(document).ready(function ($) {
-
 });
-*/
-(function() {
-    new Headroom(document.querySelector("#header"), {
-        tolerance: 5,
-        offset : 205,
-/*        classes: {
-          initial: "slide",
-          pinned: "slide--reset",
-          unpinned: "slide--up"
-        }*/
-    }).init();
-
-}());

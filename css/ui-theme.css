@@ -18,6 +18,8 @@ body {
     background-color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Montserrat', sans-serif;font-family: 'Rubik', sans-serif;font-family: 'Libre Franklin', sans-serif;
+	
+font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -68,7 +70,7 @@ p {
     margin: 0 0 0.5rem 0;
     text-align: left;
     font-size: calc(12px + (15 - 11) * (100vw - 320px) / (1920 - 320) );
-	font-size: calc(90.5% + 0.15vw);
+	font-size: calc(80.5% + 0.058vw);
 }
 
 .clearfx:before,
@@ -92,19 +94,21 @@ ul.default li {
     font-weight: normal;
     line-height: 1.5;
     margin: 0 0 0.5rem 0;
-    font-size: 0.85em;
+    font-size: calc(80.5% + 0.058vw);
     padding-left: 1em;
     text-indent: -1.25em;
 	    padding-left: 1rem;
     text-indent: -1.5rem;
 }
 li{
-    font-weight: 400;
+	font-weight: 400;
     line-height: 1.5;
-   /* margin: 0 0 0.5rem 0;*/
+    text-indent: -20px;
+    margin-left: 15px;
+    padding: 0 0 0 1em;
     text-align: left;
     font-size: calc(12px + (15 - 11) * (100vw - 320px) / (1920 - 320) );
-	font-size: calc(90.5% + 0.15vw);
+    font-size: calc(80.5% + 0.058vw);
 }
 button:focus {
     border: 0;
@@ -137,7 +141,7 @@ h3,
 h4,
 h5,
 h6 {
-
+font-family: 'Calistoga', cursive;
     margin: 0 0 0.5rem 0;
 }
 .header-xxl {
@@ -604,18 +608,47 @@ effect
     -o-animation-name:slideUp;
     animation-name:slideUp
 }
-
 .headroom {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+/*  padding: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;*/
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+  z-index: 1;
+}
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+	border:0px solid red;
+}
+.headroom--pinned {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.headroom--not-top {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+/*.headroom {
   transition: transform 200ms linear;
   transition: transform 200ms linear;
     background-color:red;
 }
 
 .headroom--pinned {
-          transform: translateY(20%);
+     transform: translateY(20%);
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
      background-color:aqua;
+	border:10px solid red;
 }
 .headroom--pinned {
     transform: translateY(0);
@@ -630,7 +663,7 @@ effect
     right: 0;
     left: 0;
     top: 0;
-}
+}*/
 .sticky { background-color: red; }
 /*!
  * Hamburgers
