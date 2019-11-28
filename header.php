@@ -32,7 +32,7 @@
         <header id="header" style="" class="desktop">
             <div class="wrapper">
                 <div id="site-title">
-                    <a href="<?php echo get_home_url(); ?>" class="logo-header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="logo-main"></a>
+                    <a href="<?php echo get_home_url(); ?>" class="logo-header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="logo-main" alt=""></a>
                     <div id="site-description">
                         <?php bloginfo( 'description' ); ?>
                     </div>
@@ -49,7 +49,7 @@
                     <b></b>
                     <span>Menu</span>
                 </a>
-			 <a href="<?php echo get_home_url(); ?>" class="logo-header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="logo-main"></a>
+			 <a href="<?php echo get_home_url(); ?>" class="logo-header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="logo-main" alt=""></a>
                 <nav id="my-menu">
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container_id' => 'main-nav', 'container' => false, 'menu_id' => 'myMenu', 'menu_class' => 'menu-mobile' ) ); ?>
                 </nav>

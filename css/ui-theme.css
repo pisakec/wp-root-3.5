@@ -340,8 +340,8 @@ header
 	width:100%;
 }
 .logo-header{
-	max-width:150px;
-	border:1px solid rgba(162,162,162,0.3);
+	max-width:200px;
+	border:0px solid rgba(162,162,162,0.3);
 	    display: inline-block;
 }
 #header{
@@ -846,7 +846,7 @@ ul.menu > li > ul.sub-menu {
     left: 0;
     z-index: 7;
     height: 50px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
     opacity: 0;
     visibility: hidden;
     transition: all 0.35s ease-in-out;
