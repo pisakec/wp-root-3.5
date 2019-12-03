@@ -22,6 +22,39 @@ span.logo{
 .mm-panels>.mm-panel li{
 	text-indent:inherit;
 }
+.slides .slick-prev:before {
+    content: '\e80d';
+    font-family: 'fontello';
+    color: #172668;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-next:before {
+    content: '\e80e';
+    font-family: 'fontello';
+    color: #172668;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-next {
+    right: 20px;
+}
+.slick-prev {
+    left: 20px;
+}
+.slick-prev, .slick-next {
+    z-index: 9;
+}
 /*.mm-wrapper_opening .mm-menu_fx-listitems-slide .mm-panel_opened .mm-listitem{
     color: rgba(255, 255, 255, 0.18);
 }
