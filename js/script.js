@@ -4,17 +4,30 @@ WebFont.load({
 	}
 });
 document.addEventListener(
-        "DOMContentLoaded", () => {
-            new Mmenu( "#my-menu", {
-                extensions: [
-				"pagedim-black",
-				"fx-menu-slide",
-              	"fx-listitems-slide",
-				"theme-black"							
-							]
-            });
-        }
-    );
+    "DOMContentLoaded", () => {
+        new Mmenu( "#my-menu", {
+            extensions: [
+                "pagedim-black",
+                "fx-menu-slide",
+                "fx-listitems-slide",
+                "theme-black","border-full"
+            ],
+            "iconbar": {
+                "use": true,
+                "top": [
+                    "<a href='#/'><i class='fa fa-home'></i></a>",
+                    "<a href='#/'><i class='fa fa-user'></i></a>"
+                ],
+                "bottom": [
+                    "<a href='#/'><i class='fa fa-twitter'></i></a>",
+                    "<a href='#/'><i class='fa fa-facebook'></i></a>",
+                    "<a href='#/'><i class='fa fa-linkedin'></i></a>"
+                ]
+            },
+            "iconPanels": true 
+        });
+    }
+);
 
 document.addEventListener(
         "DOMContentLoaded", () => {
