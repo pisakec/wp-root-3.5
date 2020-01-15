@@ -33,7 +33,7 @@ require_once( get_template_directory() . '/func/js-css.php' );
 require_once( get_template_directory() . '/func/widget.php' );
 require_once( get_template_directory() . '/func/disable-img-src.php' );
 require_once( get_template_directory() . '/func/strip-shortcodes-on-homepage-but-not-single.php' );
-require_once( get_template_directory() . '/func/sharpen-resized-JPEG.php' );
+//require_once( get_template_directory() . '/func/sharpen-resized-JPEG.php' );
 require_once( get_template_directory() . '/func/rss-post-thumbnail.php' );
 require_once( get_template_directory() . '/func/style-first-paragraph.php' );
 require_once( get_template_directory() . '/func/upload-file-format.php' );
