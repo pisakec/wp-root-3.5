@@ -19,13 +19,12 @@
 			display: none;
 		}
 	</style>
-	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-	<link rel='dns-prefetch' href='//s.w.org' />
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+	<link rel='dns-prefetch' href='//s.w.org'>	
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">	
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
 	<link rel="dns-prefetch" href="//www.googletagmanager.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 </head>
 <body <?php body_class(); ?>>
     <div id="my-page" style="border: 0px solid #000;">
