@@ -23,7 +23,7 @@ function my_jquery_remove() {
 }
 add_action('init', 'my_jquery_remove'); 
 /* ==========================================================================
-// js
+// js 
 ========================================================================== */
 function wptuts_scripts_load_cdn() {
 	wp_register_script( 'jq', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ) );
@@ -54,6 +54,7 @@ function wptuts_scripts_load_cdn() {
 	wp_enqueue_script( 'script' );
 }
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_load_cdn', 1 );
+/* add_action('wp_enqueue_scripts', 'load_scripts', 1);	- 1 is smaller than the default 10...
 /* ==========================================================================
 // css
 ========================================================================== */
