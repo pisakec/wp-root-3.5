@@ -32,8 +32,8 @@ function wptuts_scripts_load_cdn() {
 	wp_enqueue_script( 'migration' );*/
 	wp_register_script( 'font', get_template_directory_uri() . '/js/webfont.js', array( 'jquery' ) );
 	wp_enqueue_script( 'font' );
-	wp_register_script( 'utility', get_template_directory_uri() . '/js/modernizr-2.6.2.min.js', array( 'jquery' ) );
-	wp_enqueue_script( 'utility' );
+/*	wp_register_script( 'utility', get_template_directory_uri() . '/js/modernizr-2.6.2.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'utility' );*/
 /*	wp_register_script( 'truncate', get_template_directory_uri() . '/js/jQuery.succinct.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'truncate' );*/
 /*	wp_register_script( 'nice', get_template_directory_uri() . '/js/jquery.mmenu.all.js', array( 'jquery' ) );
@@ -44,8 +44,8 @@ function wptuts_scripts_load_cdn() {
 	wp_enqueue_script( 'mburger' );*/
 	wp_register_script( 'slide', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'slide' );
-	wp_register_script( 'scroll', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
-	wp_enqueue_script( 'scroll' );
+/*	wp_register_script( 'scroll', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
+	wp_enqueue_script( 'scroll' );*/
 	wp_register_script( 'scrore', get_template_directory_uri() . '/js/headroom.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'scrore' );
 	wp_register_script( 'zopim', get_template_directory_uri() . '/js/lazyload.min.js', array( 'jquery' ) );
@@ -70,6 +70,7 @@ function theme_styles() {
 	wp_enqueue_style( 'mburger', get_template_directory_uri() . '/css/mburger.css' );
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css' );
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css' );
+	wp_enqueue_style( 'common-ui', get_template_directory_uri() . '/css/common-ui.css' );
 	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/ui-theme.css' );
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/q.css',2 );
 	// Conditionally load the FlexSlider CSS on the homepage

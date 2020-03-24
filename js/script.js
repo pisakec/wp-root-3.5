@@ -29,7 +29,7 @@ document.addEventListener(
     }
 );
 
-document.addEventListener(
+/*document.addEventListener(
         "DOMContentLoaded", () => {
             new Mhead( "#my-header", {
                 scroll: {
@@ -37,7 +37,7 @@ document.addEventListener(
                 }
             });
         }
-    );
+    );*/
 
 
 jQuery(document).ready(function ($) {
