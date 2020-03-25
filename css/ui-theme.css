@@ -112,14 +112,7 @@ single
 effect
 ========================================================================== */
 
-#my-header{
-    display:flex;
-    flex-flow:row wrap;
-    width:100%;
-    justify-content: space-between;
-    position: sticky;
-    background-color: #ccc;
-}
+
 .animated{
     -webkit-animation-duration:.5s;
     -moz-animation-duration:.5s;

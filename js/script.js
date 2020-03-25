@@ -1,6 +1,6 @@
 WebFont.load({
 	google: {
-		families: ['Calistoga','Poppins:400,500,700&display=swap']
+		families: ['Playfair+Display:400,500,700,800,900','Raleway:400,500,700&display=swap','']
 	}
 });
 document.addEventListener(
@@ -29,7 +29,7 @@ document.addEventListener(
     }
 );
 
-/*document.addEventListener(
+document.addEventListener(
         "DOMContentLoaded", () => {
             new Mhead( "#my-header", {
                 scroll: {
@@ -37,7 +37,7 @@ document.addEventListener(
                 }
             });
         }
-    );*/
+    );
 
 
 jQuery(document).ready(function ($) {

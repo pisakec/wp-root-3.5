@@ -40,7 +40,7 @@
                 </div>
             </div>
         </header>
-		<header  class="mobile">
+		<header  class="mobile" id="my-header">
 		<div id="my-header">
                 <a class="mburger mburger--collapse" href="#my-menu">
                     <b></b>
