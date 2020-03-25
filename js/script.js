@@ -1,6 +1,6 @@
 WebFont.load({
 	google: {
-		families: ['Playfair+Display:400,500,700,800,900','Raleway:400,500,700&display=swap','']
+		families: ['Playfair+Display:400,500,700,800,900','Aleo:400,700','IBM+Plex+Sans+Condensed:400,500,700','Raleway:400,500,700&display=swap']
 	}
 });
 document.addEventListener(

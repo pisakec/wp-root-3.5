@@ -1,9 +1,11 @@
 :root {
   --main-bg-color: #fff;
-  --header-font: 'Playfair Display', serif;
-  --body-font: 'Raleway', sans-serif;
+  --header-font: 'IBM Plex Sans Condensed', sans-serif;
+  --body-font: 'Aleo', serif;
+	--header-color: #000
+/*font-family: 'IBM Plex Sans Condensed', sans-serif;*/
 
-	--main-txt-color: #000;
+	--main-txt-color: #111;
 }
 @font-face {
     font-family: 'fontello';
@@ -151,6 +153,7 @@ h5,
 h6 {
 font-family: var(--header-font);
     margin: 0 0 0.5rem 0;
+	var(--header-color);
 }
 .header-xxl {
     font-size: 2.5em;
