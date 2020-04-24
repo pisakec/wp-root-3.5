@@ -100,26 +100,7 @@ p {
     clear: both;
 }
 
-ul.default li {
-    font-weight: normal;
-    line-height: 1.5;
-    margin: 0 0 0.5rem 0;
-    font-size: calc(80.5% + 0.058vw);
-    padding-left: 1em;
-    text-indent: -1.25em;
-	    padding-left: 1rem;
-    text-indent: -1.5rem;
-}
-li{
-	font-weight: 400;
-    line-height: 1.5;
-    text-indent: -20px;
-    margin-left: 15px;
-    padding: 0 0 0 1em;
-    text-align: left;
-    font-size: calc(12px + (15 - 11) * (100vw - 320px) / (1920 - 320) );
-    font-size: calc(80.5% + 0.058vw);
-}
+
 button:focus {
     border: 0;
     outline: none:
@@ -237,7 +218,13 @@ marginz{
     margin: 0 auto;
     text-align: center;
 }
+.text-align-center{
+    text-align: center   
+}
 .text-align-left{
+	text-align: left;
+}
+.text-align-right{
 	text-align: left;
 }
 .hide {
