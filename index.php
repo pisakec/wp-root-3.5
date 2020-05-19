@@ -5,10 +5,10 @@ get_header();
 <!--<h1>index</h1>-->
 <main id="index">
 	<section class="content">
-		<div class="wrapper row-wrap">
-			<div class="has-sidebar">
+		<div class="wrapper row-wrap with-sidebar">
+			<div class="has-sidebar row-wrap">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('column-3'); ?>>
 					<div class="featured-image">
 						<a href="<?php the_permalink() ?>">
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -25,7 +25,6 @@ get_header();
 				</article>
 				<?php endwhile; endif; ?>
 			</div>
-
 			<?php get_sidebar(); ?>
 		</div>
 	</section>

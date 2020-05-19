@@ -4,7 +4,7 @@
 <main id="page">
 	<section class="content" id="post-<?php the_ID(); ?>" >
 		<div class="wrapper row-wrap">
-			<div class="has-sidebar">
+			<div class="has-sidebar row-wrap">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?>>
 					<div class="featured-image">

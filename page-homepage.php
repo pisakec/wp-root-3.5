@@ -16,11 +16,11 @@ get_header();
 						//'post__in'=>get_option('sticky_posts'),
 					'category__in' => array( 6,51,40,15 ),
 					'offset' => 0, 
-					'orderby' => 'rand',
+					'orderby' => 'publish_date',
 					'posts_per_page' => 44) );
 					 ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 					<div class="featured-image">
 						<a href="<?php the_permalink() ?>">
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>

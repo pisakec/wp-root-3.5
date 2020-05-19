@@ -3,6 +3,15 @@
 	width: var(--wrapper-width);
 	margin:0 auto;
 }
+.has-sidebar{
+	width:calc(100% - 300px - 30px);
+}
+.with-sidebar{
+	justify-content: space-between;
+}
+main{
+	margin-top: 8em;
+}
 /* ==========================================================================
 header
 ========================================================================== */
@@ -15,11 +24,11 @@ header
 	    display: inline-block;
 }
 #header{
-	/*background-color: rgba(255,255,255,0.97);*/
-/*	    position: fixed;
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
     top: 0;
     left: 0;
-    z-index: 9;*/
+    width: 100%;
 }
 header {
     display: flex;
@@ -118,96 +127,10 @@ effect
 ========================================================================== */
 
 
-.animated{
-    -webkit-animation-duration:.5s;
-    -moz-animation-duration:.5s;
-    -o-animation-duration:.5s;
-    animation-duration:.5s;
-    -webkit-animation-fill-mode:both;
-    -moz-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    animation-fill-mode:both;
-    will-change:transform,opacity
-}
-@-webkit-keyframes slideDown{
-    0%{
-        -webkit-transform:translateY(-100%)
-    }
-    100%{
-        -webkit-transform:translateY(0)
-    }
-}
-@-moz-keyframes slideDown{
-    0%{
-        -moz-transform:translateY(-100%)
-    }
-    100%{
-        -moz-transform:translateY(0)
-    }
-}
-@-o-keyframes slideDown{
-    0%{
-        -o-transform:translateY(-100%)
-    }
-    100%{
-        -o-transform:translateY(0)
-    }
-}
-@keyframes slideDown{
-    0%{
-        transform:translateY(-100%)
-    }
-    100%{
-        transform:translateY(0)
-    }
-}
-.animated.slideDown{
-    -webkit-animation-name:slideDown;
-    -moz-animation-name:slideDown;
-    -o-animation-name:slideDown;
-    animation-name:slideDown
-}
-@-webkit-keyframes slideUp{
-    0%{
-        -webkit-transform:translateY(0)
-    }
-    100%{
-        -webkit-transform:translateY(-100%)
-    }
-}
-@-moz-keyframes slideUp{
-    0%{
-        -moz-transform:translateY(0)
-    }
-    100%{
-        -moz-transform:translateY(-100%)
-    }
-}
-@-o-keyframes slideUp{
-    0%{
-        -o-transform:translateY(0)
-    }
-    100%{
-        -o-transform:translateY(-100%)
-    }
-}
-@keyframes slideUp{
-    0%{
-        transform:translateY(0)
-    }
-    100%{
-        transform:translateY(-100%)
-    }
-}
-.slideUp{
-    -webkit-animation-name:slideUp;
-    -moz-animation-name:slideUp;
-    -o-animation-name:slideUp;
-    animation-name:slideUp
-}
+
 .headroom {
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+  
+  box-shadow: 0 1px 0 rgba(0, 1px, 15px, 0.207);
 /*  padding: 2rem;
   position: fixed;
   left: 0;
