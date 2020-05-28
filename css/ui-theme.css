@@ -116,16 +116,40 @@ single
 #single {
    
 }
-.entry img{
-	max-width:100%;
-	display: none;
-}
+
 
 
 /* ==========================================================================
 effect
 ========================================================================== */
-
+.wp-pagenavi{
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+        color: #b3b8be;
+    font-size: 0.85rem;
+}
+.wp-pagenavi a{
+    color: #a95ae9;
+    padding:10px;
+}
+.wp-pagenavi span{
+    padding:10px;
+}
+.breadcrumbs{
+     width:100%;
+    display: flex;
+    flex-flow: row wrap;
+        color: #b3b8be;
+    font-size: 0.85rem;
+}
+.breadcrumbs span{
+        padding: 2px;
+}
+.breadcrumbs a{
+    color: #a95ae9;    color: #f07959;
+        padding: 0px;
+}
 
 
 .headroom {
