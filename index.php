@@ -6,9 +6,10 @@ get_header();
 <main id="index">
 	<section class="content">
 		<div class="wrapper row-wrap with-sidebar">
-			<div class="has-sidebar row-wrap">
+			<?php /*?><div class="has-sidebar row-wrap"><?php */?>
+            <div class="no-sidebar row-wrap">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class('column-3'); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('column-5'); ?>>
 					<div class="featured-image">
 						<a href="<?php the_permalink() ?>">
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -16,7 +17,7 @@ get_header();
 						</a>
 					</div>
 					<?php global $post; $categories = get_the_category($post->ID); $cat_link = get_category_link($categories[0]->cat_ID); echo '<a href="'.$cat_link.'"  class="cat-name">'.$categories[0]->cat_name.'</a>' ?>
-					<h2 class="header-m header-500"><a href="<?php the_permalink()?>" class=""><?php the_title(); ?></a> </h2>
+					<h2 class="header"><a href="<?php the_permalink()?>" class=""><?php the_title(); ?></a></h2>
 					<div class="entry">						
 						<p>
 							<?php echo wp_trim_words( get_the_content(), 40, '...' ); ?> </p>
@@ -25,7 +26,7 @@ get_header();
 				</article>
 				<?php endwhile; endif; ?>
 			</div>
-			<?php get_sidebar(); ?>
+			<?php //get_sidebar(); ?>
 		</div>
 	</section>
 </main>
