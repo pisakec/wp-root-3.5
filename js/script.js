@@ -1,8 +1,17 @@
+/*
+jQuery(document).ready(function ($) {
+
+});
+*/
+
 WebFont.load({
 	google: {
 		families: ['Playfair+Display:400,500,700,800,900','Aleo:400,700','IBM+Plex+Sans+Condensed:400,500,700','Raleway:400,500,700&display=swap']
 	}
 });
+/*
+///////////////////////////////////////////////////////////////////////////////////
+*/
 document.addEventListener(
     "DOMContentLoaded", () => {
         new Mmenu( "#my-menu", {
@@ -39,7 +48,9 @@ document.addEventListener(
         }
     );
 
-
+/*
+///////////////////////////////////////////////////////////////////////////////////
+*/
 jQuery(document).ready(function ($) {
 	$('.col-right-news').slick({
 		slidesToShow: 3,
@@ -49,9 +60,9 @@ jQuery(document).ready(function ($) {
 		vertical: !0,
 		autoplaySpeed: 1000,
 		infinite: !0,
+        prevArrow: null,
+		nextArrow: null,
 		pauseOnHover: true,
-		prevArrow: '<button type="button" class="slick-prev"></button>',
-		nextArrow:  '<button type="button" class="slick-next"></button>',
 		speed: 1000,
 		adaptiveHeight: !0,
 		responsive: [{
@@ -71,12 +82,13 @@ jQuery(document).ready(function ($) {
 	$('.related-post').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		autoplay: !0,
-		dot: !1,
+		autoplay: true,
+		dot: false,
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		nextArrow:  '<button type="button" class="slick-next"></button>',
 		autoplaySpeed: 1000,
-		infinite: !0,
-		prevArrow: null,
-		nextArrow: null,
+		infinite: true,
+
 		speed: 300,
 		responsive: [{
 			breakpoint: 1024,
@@ -107,10 +119,9 @@ jQuery(document).ready(function ($) {
 
 
 
-/*
-jQuery(document).ready(function ($) {
 
-});
+/*
+///////////////////////////////////////////////////////////////////////////////////
 */
 (function() {
     new Headroom(document.querySelector("#header"), {
@@ -125,6 +136,9 @@ jQuery(document).ready(function ($) {
 
 }());
 
+/*
+///////////////////////////////////////////////////////////////////////////////////
+*/
 jQuery(document).ready(function ($) {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 5) {
@@ -134,6 +148,9 @@ jQuery(document).ready(function ($) {
 		}
 	})
 });
+/*
+///////////////////////////////////////////////////////////////////////////////////
+*/
 jQuery(window).scroll(function () {
 	if (jQuery(this).scrollTop() > 100) {
 		jQuery('#back-to-top').addClass('scrolled')
@@ -147,6 +164,10 @@ jQuery('#back-to-top').click(function () {
 	}, 800);
 	return !1
 })
+
+/*
+///////////////////////////////////////////////////////////////////////////////////
+*/
 var myLazyLoad = new LazyLoad({
     elements_selector: "img.lazy"		
 });
