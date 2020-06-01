@@ -20,6 +20,7 @@ get_header();
 					'posts_per_page' => 44) );
 					 ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<h1 class="full-width text-align-left header-title row-wrap"><?php $link = get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?><a href="<?php echo $link; ?>" title="<?php single_cat_title(); ?>"><span><?php single_cat_title(); ?></span></a></h1>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 					<div class="featured-image">
 						<a href="<?php the_permalink() ?>">
