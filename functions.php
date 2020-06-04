@@ -29,7 +29,7 @@ require_once( get_template_directory() . '/func/post-format.php' );
 require_once( get_template_directory() . '/func/register-nav-menu.php' );
 require_once( get_template_directory() . '/func/display-featured-img-admin.php' );
 require_once( get_template_directory() . '/func/js-css.php' );
-//require_once( get_template_directory() . '/func/remove-empty-p.php' );
+require_once( get_template_directory() . '/func/disable-generate-img.php' );
 require_once( get_template_directory() . '/func/widget.php' );
 require_once( get_template_directory() . '/func/disable-img-src.php' );
 require_once( get_template_directory() . '/func/strip-shortcodes-on-homepage-but-not-single.php' );
