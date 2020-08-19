@@ -1,6 +1,3 @@
-/**{border:1px solid red!important;}
-*:before{display:none!important;}
-*:after{display:none!important;}*/
 .desktop {
   display: block;
 }
@@ -61,6 +58,15 @@ menu
   .wrapper {
     padding: 0 1em;
   }
+	  .no-sidebar {
+    width: 100%;
+    justify-content: space-around;
+  }
+		  .column-5 {
+    width: calc(100% / 3 - 20px);
+    border: 0px solid red;
+    margin: 0;
+  }
 }
 /* ==========================================================================
 menu
@@ -95,12 +101,25 @@ menu
   main {
     margin-top: 8em;
   }
-    .column-4 {
+  .no-sidebar {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .column-5 {
+    width: calc(100% / 2 - 20px);
+    border: 0px solid red;
+    margin: 0;
+  }
+  .column-3 {
+    width: calc(100% / 2 - 20px);
+	  margin:0;
+	}
+  .column-4 {
     width: calc(100% / 2 - 10px);
-    }
-    .column-4:nth-of-type(2n){
+  }
+  .column-4:nth-of-type(2n) {
     margin-right: 00px;
-    }
+  }
 }
 /* ==========================================================================
 menu
@@ -113,15 +132,26 @@ menu
     width: 100%;
     margin-bottom: 1em;
   }
+
 }
 /* ==========================================================================
 menu
 ========================================================================== */
 @media only screen and (max-width: 480px) {
-    .column-4 {
+  .column-4 {
     width: calc(100% / 1 - 0px);
-            margin-right: 00px;
-    }
+    margin-right: 00px;
+  }
+	  .column-5 {
+    width: calc(100% / 0 - 00px);
+		  width:100%;
+    border: 0px solid red;
+    margin: 0;
+  }
+	  .column-3 {
+    width: calc(100% / 1 - 0px);
+	  margin:0;
+	}
 }
 /* ==========================================================================
 menu

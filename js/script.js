@@ -123,18 +123,18 @@ jQuery(document).ready(function ($) {
 /*
 ///////////////////////////////////////////////////////////////////////////////////
 */
-(function() {
+/*(function() {
     new Headroom(document.querySelector("#header"), {
         tolerance: 5,
         offset : 205,
-/*        classes: {
+        classes: {
           initial: "slide",
           pinned: "slide--reset",
           unpinned: "slide--up"
-        }*/
+        }
     }).init();
 
-}());
+}());*/
 
 /*
 ///////////////////////////////////////////////////////////////////////////////////

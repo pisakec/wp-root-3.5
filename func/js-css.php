@@ -46,12 +46,14 @@ function wptuts_scripts_load_cdn() {
 	wp_enqueue_script( 'slide' );
 /*	wp_register_script( 'scroll', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
 	wp_enqueue_script( 'scroll' );*/
-	wp_register_script( 'scrore', get_template_directory_uri() . '/js/headroom.min.js', array( 'jquery' ) );
-	wp_enqueue_script( 'scrore' );
+/*	wp_register_script( 'scrore', get_template_directory_uri() . '/js/headroom.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'scrore' );*/
 	wp_register_script( 'zopim', get_template_directory_uri() . '/js/lazyload.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'zopim' );
 	wp_register_script( 'script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ) );
 	wp_enqueue_script( 'script' );
+	wp_register_script( 'play', get_template_directory_uri() . '/js/play.js', array( 'jquery' ) );
+	wp_enqueue_script( 'play' );
 }
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_load_cdn', 1 );
 /* add_action('wp_enqueue_scripts', 'load_scripts', 1);	- 1 is smaller than the default 10...
@@ -72,6 +74,7 @@ function theme_styles() {
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css' );
 	wp_enqueue_style( 'common-ui', get_template_directory_uri() . '/css/common-ui.css' );
 	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/ui-theme.css' );
+	wp_enqueue_style( 'play', get_template_directory_uri() . '/css/play.css' );
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/q.css',2 );
 	// Conditionally load the FlexSlider CSS on the homepage
 //	if ( is_page( 'home' ) ) {

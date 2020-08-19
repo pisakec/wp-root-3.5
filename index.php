@@ -9,7 +9,7 @@ get_header();
 			<?php /*?><div class="has-sidebar row-wrap"><?php */?>
             <div class="no-sidebar row-wrap">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class('column-5'); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('column-4'); ?>>
 					<div class="featured-image">
 						<a href="<?php the_permalink() ?>">
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>

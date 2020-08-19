@@ -7,7 +7,7 @@ get_header();
 	<section class="content ">
 		<div class="wrapper row-wrap">
 			<div class="has-sidebar row-wrap">
-				<h1 class="text-align-left"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
+				<h1 class="text-align-left full-width"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?>>
 					<div class="featured-image">
