@@ -16,7 +16,7 @@
     <?php wp_head(); ?>
 	<style>
 		#my-menu:not( .mm-menu) {
-			display: none;
+			display: none;/**/
 		}
 	</style>
 	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
@@ -35,8 +35,8 @@
                     <div id="site-description">
                         <?php bloginfo( 'description' ); ?>
                     </div>
-		    <?php $defaults = array( 'container' => '', 'menu' => 'main-menu', 'menu_class' => 'menu-mobile menu' ); wp_nav_menu( $defaults ); ?>
-                    <?php //wp_nav_menu( array( 'theme_location' => 'main-menu','container_id' => 'main-nav', 'container' => false, 'menu_id' => 'myMenu', 'menu_class' => 'menu-mobile menu' ) ); ?>
+		    <?php //$defaults = array( 'container' => '', 'menu' => 'main-menu', 'menu_class' => 'menu-mobile menu' ); wp_nav_menu( $defaults ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container_id' => 'main-nav', 'container' => false, 'menu_id' => 'myMenu', 'menu_class' => 'menu-mobile menu' ) ); ?>
                 </div>
             </div>
         </header>
