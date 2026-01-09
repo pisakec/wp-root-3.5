@@ -29,7 +29,7 @@
 <body <?php body_class(); ?>>
     <div id="my-page" style="border: 0px solid #000;">
         <header id="header" style="" class="desktop">
-            <div class="wrapper">
+            
                 <div id="site-title">
                     <a href="<?php echo get_home_url(); ?>" class="logo-header"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="logo-main" alt=""></a>
                     <div id="site-description">
@@ -38,9 +38,10 @@
 		    <?php //$defaults = array( 'container' => '', 'menu' => 'main-menu', 'menu_class' => 'menu-mobile menu' ); wp_nav_menu( $defaults ); ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container_id' => 'main-nav', 'container' => false, 'menu_id' => 'myMenu', 'menu_class' => 'menu-mobile menu' ) ); ?>
                 </div>
-            </div>
+                
+            
         </header>
-		<header  class="mobile" id="my-header">
+		<header  class="mobile" id="header">
 		<div id="my-header">
                 <a class="mburger mburger--collapse" href="#my-menu">
                     <b></b>
