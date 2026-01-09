@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 
 WebFont.load({
 	google: {
-		families: ['Playfair+Display:400,500,700,800,900','Aleo:400,700','IBM+Plex+Sans+Condensed:400,500,700','Raleway:400,500,700&display=swap']
+		families: ['Roboto Condensed:400,500,700,800,900','Work+Sans:200,300, 500,700','IBM+Plex+Sans+Condensed:400,500,700','Raleway:400,500,700&display=swap']
 	}
 });
 /*
@@ -135,11 +135,43 @@ jQuery(document).ready(function ($) {
     }).init();
 
 }());*/
+ gsap.registerPlugin(ScrollTrigger);
 
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        const showAnim = gsap.from(header, { 
+            yPercent: -100,
+            paused: true,
+            duration: 0.3,
+            ease: "power2.out"
+        }).progress(1);
+
+        ScrollTrigger.create({
+            start: "top top",
+            end: "max",
+            onUpdate: (self) => {
+                const currentScroll = self.scroll();
+                
+                if (currentScroll < 100) {
+                    showAnim.play();
+                } else {
+                    if (currentScroll > lastScroll) {
+                        // Scrolling down - hide header
+                        showAnim.reverse();
+                    } else {
+                        // Scrolling up - show header
+                        showAnim.play();
+                    }
+                }
+                
+                lastScroll = currentScroll;
+            }
+        });
 /*
 ///////////////////////////////////////////////////////////////////////////////////
 */
-jQuery(document).ready(function ($) {
+/*jQuery(document).ready(function ($) {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 5) {
 			$('body').addClass("sticky-header")
@@ -147,7 +179,7 @@ jQuery(document).ready(function ($) {
 			$('body').removeClass("sticky-header")
 		}
 	})
-});
+});*/
 /*
 ///////////////////////////////////////////////////////////////////////////////////
 */
