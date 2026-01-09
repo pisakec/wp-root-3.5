@@ -44,10 +44,10 @@ function wptuts_scripts_load_cdn() {
 	wp_enqueue_script( 'mburger' );*/
 	wp_register_script( 'slide', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'slide' );
-/*	wp_register_script( 'scroll', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array( 'jquery' ) );
-	wp_enqueue_script( 'scroll' );*/
-/*	wp_register_script( 'scrore', get_template_directory_uri() . '/js/headroom.min.js', array( 'jquery' ) );
-	wp_enqueue_script( 'scrore' );*/
+	wp_register_script( 'scroll', get_template_directory_uri() . '/js/gsap.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'scroll' );
+	wp_register_script( 'scrore', get_template_directory_uri() . '/js/ScrollTrigger.min.js', array( 'jquery' ) );
+	wp_enqueue_script( 'scrore' );
 	wp_register_script( 'zopim', get_template_directory_uri() . '/js/lazyload.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'zopim' );
 	wp_register_script( 'script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ) );
